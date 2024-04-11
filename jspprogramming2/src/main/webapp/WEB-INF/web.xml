@@ -5,11 +5,12 @@
          version="5.0">
     
     <servlet>
-        <display-name>HelloWorld</display-name>
-        <servlet-name>HelloWorld</servlet-name>
+        <display-name>HelloServlet</display-name>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>org.example.jspprogramming.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>HelloWorld</servlet-name>
+        <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/HWorld</url-pattern>
     </servlet-mapping>
 </web-app>

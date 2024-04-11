@@ -1,11 +1,14 @@
-package org.example.jsppromgramming;
+package org.example.jspprogramming;
 
 import java.io.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "/HWorld", value = "/HWorld")
 public class HelloServlet extends HttpServlet {
+    public HelloServlet(){
+        super();
+    }
     private String message;
 
     public void init() {
@@ -13,13 +16,6 @@ public class HelloServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
-
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
     }
 
     public void destroy() {
